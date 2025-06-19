@@ -5,13 +5,6 @@ pipeline {
         COMPOSE_PROJECT_NAME = 'flaskmongo'
     }
 
-    stages {
-        stage('Clone Repository') {
-            steps {
-                echo 'Repository already cloned by Jenkins. Skipping manual git clone.
-            }
-        }
-
         stage('Build Docker Images') {
             steps {
                 sh 'docker-compose build'
