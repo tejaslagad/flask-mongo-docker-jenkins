@@ -5,6 +5,7 @@ pipeline {
         COMPOSE_PROJECT_NAME = 'flaskmongo'
     }
 
+    stages {
         stage('Build Docker Images') {
             steps {
                 sh 'docker-compose build'
@@ -31,4 +32,3 @@ pipeline {
         }
     }
 }
-
