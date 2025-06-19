@@ -8,7 +8,7 @@ pipeline {
     stages {
         stage('Clone Repository') {
             steps {
-                git 'https://github.com/tejaslagad/your-flask-mongo-repo.git'
+                echo 'Repository already cloned by Jenkins. Skipping manual git clone.
             }
         }
 
